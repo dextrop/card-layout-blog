@@ -2,4 +2,5 @@
 
 ng build
 rm -rf docs
-mv dist docs
+cp -r dist/cardlayoutnoimage docs
+rm -rf dist
