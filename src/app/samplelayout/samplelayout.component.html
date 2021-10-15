@@ -1,0 +1,14 @@
+<div class="container">
+    <input placeholder="Search Post" class="form-control searchbox"> 
+    <div class="row">
+      <div class="col-md-4" *ngFor="let article of articles; let i = index">
+        <app-cardlayout
+          [post_title]="article.title"
+          [updated_on]="article.publishedAt"
+          [post_category]="article.author"
+          [post_description]="article.description"    
+          [post_link]="article.url"
+        ></app-cardlayout>
+      </div>
+    </div>
+  </div>
