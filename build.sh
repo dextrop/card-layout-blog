@@ -1,6 +1,3 @@
 #!/bin/bash
 
-ng build
-rm -rf docs
-cp -r dist/cardlayoutnoimage docs
-rm -rf dist
+ng build --prod=true --outputPath=docs --baseHref=/card-layout-blog/

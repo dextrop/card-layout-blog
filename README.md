@@ -11,6 +11,10 @@ src/
       cardlayout.component.html
       cardlayout.component.ts
       cardlayout.component.css
+    samplelayout/
+      samplelayout.component.html
+      samplelayout.component.ts
+      samplelayout.component.css      
 ```
 
 copy folder `cardlayout` inside `src/app/` and paste it in your angular project inside `src/app/`
@@ -23,7 +27,7 @@ Add Bootstrap and Font Awesome to index.html
 
 ## Using the card layout
 
-Card Layout can be simply used as 
+Card Layout can be simply used as, check samplelayout for code reference.
 
 ```
 <div class="container">
