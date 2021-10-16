@@ -9,8 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class SamplelayoutComponent implements OnInit {
 
   title = 'cardlayoutnoimage';
-  api_key = "b8f0548811154bb6b1fd2182a65e50af";
-  url = "https://newsapi.org/v2/everything?q=india&sortBy=popularity&apiKey=b8f0548811154bb6b1fd2182a65e50af";
+  url = "https://api.ask-jennie.com/dummy/articles/";
   articles = [];
 
   constructor(private http: HttpClient) { this.get_news_api(); }
@@ -19,7 +18,7 @@ export class SamplelayoutComponent implements OnInit {
     this.http.get(this.url).subscribe(
       data => {
         console.log(data);
-        this.articles = data["articles"];
+        this.articles = data["payload"];
       }
     );
   }

@@ -4,10 +4,10 @@
       <div class="col-md-4" *ngFor="let article of articles; let i = index">
         <app-cardlayout
           [post_title]="article.title"
-          [updated_on]="article.publishedAt"
-          [post_category]="article.author"
+          [updated_on]="article.updated"
+          [post_category]="article.category"
           [post_description]="article.description"    
-          [post_link]="article.url"
+          [post_link]="article.link"
         ></app-cardlayout>
       </div>
     </div>
